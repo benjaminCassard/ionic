@@ -1,0 +1,8 @@
+{
+  "name": "demo-firebase",
+  "app_id": "c1921dc6",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
