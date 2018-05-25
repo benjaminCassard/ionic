@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { SignupPage } from '../signup/signup';
 import { AuthService } from '../../providers/auth/auth';
 
 
@@ -42,6 +43,10 @@ export class LoginPage {
         () => this.navCtrl.setRoot(HomePage),
         error => this.loginError = error.message
       );
+  }
+
+  signup(){
+    this.navCtrl.push(SignupPage);
   }
 
 }
